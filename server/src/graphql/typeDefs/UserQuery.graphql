@@ -1,0 +1,6 @@
+"""
+A User Query used to filter user data on our platform.
+"""
+input UserQuery {
+  name: String!
+}

@@ -23,17 +23,21 @@
   },
   "dependencies": {
     "apollo-server-koa": "^2.4.8",
+    "base62": "^2.0.1",
     "color": "^3.1.0",
+    "dataloader": "^1.4.0",
     "faker": "^4.1.0",
     "glob": "^7.1.3",
     "graphql": "^14.1.1",
     "koa": "^2.7.0",
     "request-promise-native": "^1.0.7",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "uuid-base62": "^0.1.0",
+    "uuid62": "^1.0.1"
   },
   "scripts": {
     "setup": "babel-node setup/index.js",
-    "start": "nodemon $NODE_DEBUG_OPTION -e js,graphql --watch src --exec babel-node index.js",
+    "start": "nodemon  --inspect -e js,graphql --watch src --exec babel-node index.js",
     "build:server": "babel src -d build --copy-files",
     "serve": "node build/index.js"
   }
